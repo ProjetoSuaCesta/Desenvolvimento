@@ -1,0 +1,114 @@
+/* Aumentando a especificidade */
+body #sobreNosContainer {
+    display: none; /* Começa oculto */
+    border: 5px solid #434343; /* Borda cinza */
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #757474;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center;
+}
+.team {
+    display: flex;
+    justify-content: center; /* Centraliza os membros */
+    gap: 20px; /* Espaço entre as figuras */
+    flex-wrap: wrap; /* Permite que as imagens se quebrem para a linha seguinte em telas pequenas */
+    margin-top: 20px;
+}
+
+.team-member {
+    text-align: center; /* Centraliza o conteúdo da figura */
+}
+
+.team-member img {
+    width: 150px; /* Tamanho fixo para as imagens */
+    height: 150px; /* Tamanho fixo para as imagens */
+    object-fit: cover; /* Faz com que a imagem cubra totalmente o espaço */
+    border-radius: 50%; /* Torna a imagem circular */
+    margin: 50px; /* Espaço entre a imagem e o nome */
+
+}
+
+.team-member figcaption {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #333; /* Cor do texto do nome */
+}
+
+/* Animação de fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animação de fade-out */
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}
+
+/* Classe para aplicar a animação de fade-in */
+body #sobreNosContainer.fade-in {
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+/* Classe para aplicar a animação de fade-out */
+body #sobreNosContainer.fade-out {
+    animation: fadeOut 0.5s ease-in-out forwards;
+}
+.nomeProduto{
+    text-align: center;
+}
+.marca{
+    font-weight: bold;
+}
+.slogan{
+    text-align: center;
+    font-style: oblique;
+
+}
+.btn-comprar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #007bff; /* Azul vibrante */
+    color: white;
+    border: none;
+    border-radius: 30px; /* Totalmente arredondado */
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-comprar:hover {
+    background-color: #0056b3; /* Azul mais escuro ao passar o mouse */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Realce na sombra */
+}
+
+.btn-comprar span {
+    margin: 0 10px; /* Espaçamento interno entre o texto */
+}
+
+.btn-comprar .divider {
+    height: 20px; /* Altura da barra vertical */
+    width: 1px;
+    background-color: white; /* Barra branca */
+    margin: 0 10px; /* Espaçamento lateral */
+}
+
