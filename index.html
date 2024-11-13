@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua Cesta - Mercadinho Azulão</title>
+    <!-- Bootstrap CSS -->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/Style.css" rel="stylesheet">
+</head>
+<body>
+
+<header data-bs-theme="dark">
+    <div class="collapse text-bg-dark" id="navbarHeader">
+        <div class="container">
+            <div class="row">
+
+            </div>
+        </div>
+    </div>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container">
+            <a href="#" class="navbar-brand d-flex align-items-center">
+                <img src="/templates/assests/logo.png" alt="Logo" width="120" height="70" class="d-inline-block align-text-top me-2">
+            </a>
+            <!-- Botão que ativa o Modal -->
+            <button id="btnSobreNos" class="btn btn-outline-light" type="button">
+                Sobre Nós
+            </button>
+        </div>
+    </div>
+    <!-- Container Oculto -->
+    <div id="sobreNosContainer" class="container mt-4" style="display: none; border: 1px solid #ccc; padding: 15px; border-radius: 8px; background-color: #f9f9f9;">
+        <h5>Sobre Nós</h5>
+        <p>Somos um grupo de universitários que resolveu criar uma forma de humanizar o atendimento online do Mercadinho e facilitar sua vida na hora de comprar o que você precisa.</p>
+        <div class="d-flex flex-wrap">
+
+            <figure class="team-member">
+                <img src="/templates/assests/Integrantes/Carlos%20Alberto%20Gomes%20Toledo.jpeg" alt="Pessoa 2" class="img-thumbnail">
+                <figcaption>Carlos Alberto Gomes Toledo</figcaption>
+            </figure>
+            <figure class="team-member">
+                <img src="/templates/assests/Integrantes/Isaac%20Kerllon%20Souza%20da%20Cruz.jpeg" alt="Pessoa 2" class="img-thumbnail">
+                <figcaption>Isaac Kerllon Souza da Cruz</figcaption>
+            </figure>
+            <figure class="team-member">
+                <img src="/templates/assests/Integrantes/Pedro%20Caetano.jpeg" alt="Pessoa 1" class="img-thumbnail">
+                <figcaption>João Pedro Silva Caetano</figcaption>
+            </figure>
+            <figure class="team-member">
+                <img src="/templates/assests/Integrantes/Tiago%20Azevedo.jpeg" alt="Pessoa 1" class="img-thumbnail">
+                <figcaption>Tiago Azevedo de Souza</figcaption>
+            </figure>
+
+            </div>
+        </div>
+</header>
+
+<main>
+
+    <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+                <h1 class="marca">Sua Cesta</h1>
+                <h3 class="slogan">Vá as compras no conforto da sua casa.</h3>
+                <p>
+                    <!--<a href="#" class="btn btn-primary my-2">Entre em contato</a>
+
+                    <a href="#" class="btn btn-secondary my-2">Secondary action</a>-->
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div class="album py-5 bg-body-tertiary">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <h4 class="nomeProduto">Cesta Alimentícia Pequena Promocional</h4>
+                        <img src="/templates/assests/Cestas/Cesta%20Alimenticia%20Promocional.jpeg" class="card-img-top" alt="Thumbnail">
+                        <div class="card-body">
+                            <p class="card-text">A Cesta pesa 15.4kg e contém os itens:</p>
+                            <p>2kg Açúcar Nota10, 3Kg Arroz Sepe e Pop, 5 Flocão Nordestino 400g, 2kg Feijão Meu Feijão, 1 Café Marata 250g, 1kg Farinha Itabaiana, 1Macarrão Mais Barato 400g, 1 Óleo Liza 900ml, 1 Leite La Serr 200g, 1 Vinagre Gota 500ml, 1 Margarina Delicia 500g, 1 Molho de Tomate Pomodoro 300ml, 2 Miojo Marata, Goiabada Palmeiron 250g, Coloral Marata 97g, Cominho Marata 97g, 1kg Sal Nota10, 2 Biscoito Fabise, 2 Refresco Pó Marata</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="#" class="btn-comprar">
+                                    R$ 149,99
+                                    <div class="divider"></div>
+                                    Comprar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <h4 class="nomeProduto">Cesta Alimentícia Pequena Premium</h4>
+                        <img src="/templates/assests/Cestas/Cesta%20Alimenticia%20Premium.jpeg" class="card-img-top" alt="Thumbnail">
+                        <div class="card-body">
+                            <p class="card-text">A Cesta pesa 15,4kg e contém 30 itens, sendo eles:</p>
+                            <p>2kg Açucar Nota10, 3kg Arroz Dalon, 5 Flocão Coringa 500g, 2kg Feijão Nota10, Cafe Marata 250g,1kg Farinha Itabaiana, 1 Macarrão Brandini 400g, 1 Oleo Soya 900ml, 1 Leite La Sere 200g, 1 Vinagre Minhoto 500ml, 1 Margarina Delicia 500g, 1 Molho de Tomate Palmeiron 300ml, 2 Miojo Nissin, 1 Goiabada Palmeiron 250g, 1Coloral Maratá 97g, 1 Cominho Maratá 97g, 1kg Sal Nevado, 2 Biscoito Vitarella, 2 Refresco em Pó Tang.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="#" class="btn-comprar">
+                                    R$ 179,99
+                                    <div class="divider"></div>
+                                    Comprar
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <h4 class="nomeProduto">Cesta Alimentícia Grande Promocional</h4>
+                            <img src="/templates/assests/Cestas/Cesta%20Alimenticia%20Promocional.jpeg" class="card-img-top" alt="Thumbnail">
+                            <div class="card-body">
+                                <p class="card-text">A Cesta pesa 43,5kg e contém 79 itens, sendo eles:</p>
+                                <p>7kg Açúcar Nota10, 10Kg Arroz Sepe e Pop, 15 Flocão Nordestino 400g, 6kg Feijão Meu Feijão, 3 Café Marata 250g, 2kg Farinha Itabaiana, 4 Macarrão Mais Barato 400g, 2 Óleo Liza 900ml, 2 Leite La Serr 200g, 1 Vinagre Gota 500ml, 2 Margarina Delicia 500g, 4 Molho de Tomate Pomodoro 300ml, 5 Miojo Marata, 2 Goiabada Palmeiron 250g, 2 Coloral Marata 97g, 2 Cominho Marata 97g, 1kg Sal Nota10, 4 Biscoito Fabise, 5 Refresco Pó Marata</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a href="#" class="btn-comprar">
+                                        R$ 379,99
+                                        <div class="divider"></div>
+                                        Comprar
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <h4 class="nomeProduto">Cesta Alimentícia Grande Premium</h4>
+                            <img src="/templates/assests/Cestas/Cesta%20Alimenticia%20Premium.jpeg" class="card-img-top" alt="Thumbnail">
+                            <div class="card-body">
+                                <p class="card-text">A Cesta pesa 43,5kg e contém 79 itens, sendo eles:</p>
+                                <p>7kg Açucar Nota10, 10kg Arroz Dalon, 15 Flocão Coringa 500g, 6kg Feijão Nota10, 3 Cafe Marata 250g,2kg Farinha Itabaiana, 4 Macarrão Brandini 400g, 2 Oleo Soya 900ml, 2 Leite La Sere 200g, 1 Vinagre Minhoto 500ml, 2 Margarina Delicia 500g, 4 Molho de Tomate Palmeiron 300ml, 5 Miojo Nissin, 2 Goiabada Palmeiron 250g, 2 Coloral Maratá 97g, 2 Cominho Maratá 97g, 1kg Sal Nevado, 4 Biscoito Vitarella, 5 Refresco em Pó Tang.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a href="#" class="btn-comprar">
+                                        R$ 429,99
+                                        <div class="divider"></div>
+                                        Comprar
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <h4 class="nomeProduto">Cesta Higiênica Promocional</h4>
+                            <img src="/templates/assests/Cestas/Cesta%20Higiênica%20Promocional.jpeg" class="card-img-top" alt="Thumbnail">
+                            <div class="card-body">
+                                <p class="card-text">A Cesta pesa 4kg e contém 12 itens, sendo eles:</p>
+                                <p>1 Água Sanitária Dragão, 1 Sabão em Pó AJU 500g, 1 Sabão em Barra Brisa 900g,  2 Esponja Brilhus, 1 Detergente Liquido Polial, 1 Fósforo Gaboardi, 1 Lã de Aço Assolan, 1 Papel Higiênico Delta, 1 Creme Dental Ice Fresh, 2 Sabonete NIPS.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a href="#" class="btn-comprar">
+                                        R$ 49,99
+                                        <div class="divider"></div>
+                                        Comprar
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <h4 class="nomeProduto">Cesta Higiênica Premium</h4>
+                            <img src="/templates/assests/Cestas/Cesta%20Higienica%20Premium.jpeg" class="card-img-top" alt="Thumbnail">
+                            <div class="card-body">
+                                <p class="card-text">A Cesta pesa 4kg e contém 12 intens, sendo eles:</p>
+                                <p>1 Água Sanitária Brilhus, 1 Sabão em Pó OMO 400g SC, 1kg Sabão em Barra YPE,  2 Esponja Condor Azul, 1 Detergente Liquido Ype, 1 Fósforo Guarany, 1 Lã de Aço Bombril, 1 Papel Higiênico Familiar Sup, 1 Creme Dental Colgate Tripla, 2 Sabonete Rexona.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a href="#" class="btn-comprar">
+                                        R$ 79,99
+                                        <div class="divider"></div>
+                                        Comprar
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- Repita abaixo se quiser mais cards -->
+
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <h4 class="nomeProduto">Surpresa de Chocolate!</h4>
+                        <img src="/templates/assests/Cestas/Chocolate%20Surpresa.jpg" class="card-img-top" alt="Thumbnail">
+                        <div class="card-body">
+                            <p class="card-text">Brinde de Chocolate</p>
+                            <p>Se você está lendo isso, rápido, aperte no botão de compra e nos contate via whatsapp, os 15 primeiros receberão um brinde. (Não envie outra mensagem além da automatica)</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <a href="#" class="btn-comprar">
+                                    R$ 00,00
+                                    <div class="divider"></div>
+                                    Comprar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                </div>
+            </div>
+        </div>
+
+    <div id="overlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 1000;"></div>
+
+    <div id="finalizeContainer" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; padding: 20px; border-radius: 10px; z-index: 1001;">
+        <h3 class="text-center">Finalize sua Compra</h3>
+        <p id="finalizeText" class="text-center"></p>
+        <div class="text-center mt-3">
+            <a id="btnWhatsApp" href="#" target="_blank" class="btn btn-success rounded-pill px-4 py-2">
+                Finalizar no WhatsApp
+            </a>
+        </div>
+    </div>
+
+</main>
+
+<footer class="text-body-secondary py-5">
+    <div class="container">
+        <p class="float-end mb-1">
+            <a href="#">Voltar ao topo</a>
+        </p>
+        <p class="mb-1">Esse site foi criado com apoio do Bootstrap e Spring Boot.</p>
+    </div>
+</footer>
+
+<!-- Script do Sobre-nos -->
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const btnSobreNos = document.getElementById('btnSobreNos');
+        const sobreNosContainer = document.getElementById('sobreNosContainer');
+
+        btnSobreNos.addEventListener('click', () => {
+            if (sobreNosContainer.style.display === 'none' || sobreNosContainer.style.display === '') {
+                sobreNosContainer.style.display = 'block';  // Torna o container visível
+                sobreNosContainer.classList.remove('fade-out'); // Remove a animação de fade-out, caso haja
+                sobreNosContainer.classList.add('fade-in');  // Adiciona a animação de fade-in
+            } else {
+                sobreNosContainer.classList.remove('fade-in'); // Remove a animação de fade-in
+                sobreNosContainer.classList.add('fade-out');  // Adiciona a animação de fade-out
+
+                // Após a animação de fade-out (500ms), esconda o container
+                setTimeout(() => {
+                    sobreNosContainer.style.display = 'none';
+                }, 500); // Tempo de duração da animação (500ms)
+            }
+        });
+    });
+</script>
+
+<!-- Botão de Compra mostra Pop-up-->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Seleciona todos os botões de compra
+        const buttons = document.querySelectorAll('.btn-comprar');
+        const overlay = document.getElementById('overlay');
+        const finalizeContainer = document.getElementById('finalizeContainer');
+        const productInfo = document.getElementById('finalizeText'); // Onde irá a mensagem de produto
+        const btnWhatsApp = document.getElementById('btnWhatsApp');
+
+        // Substitua o número abaixo pelo número do WhatsApp desejado
+        const whatsappNumber = '557991527744';
+
+        // Adiciona evento de clique em cada botão de comprar
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                const card = button.closest('.card'); // Obtém o card correspondente
+                const productName = card.querySelector('.nomeProduto').textContent; // Nome do produto
+                const productPrice = button.textContent.trim(); // Preço do botão
+
+                // Preenche as informações do container oculto
+                productInfo.textContent = `Você selecionou: ${productName} por ${productPrice}.`;
+                btnWhatsApp.href = `https://wa.me/${whatsappNumber}?text=Olá, quero uma ${productName} por ${productPrice}.`;
+
+                // Mostra o container e o overlay
+                overlay.style.display = 'block';
+                finalizeContainer.style.display = 'block';
+            });
+        });
+
+        // Adiciona funcionalidade para fechar o pop-up
+        overlay.addEventListener('click', () => {
+            overlay.style.display = 'none';
+            finalizeContainer.style.display = 'none';
+        });
+
+        // Adiciona evento no botão WhatsApp para redirecionar ao número específico
+        btnWhatsApp.addEventListener('click', () => {
+            // A URL já é gerada dinamicamente no momento do clique no botão de compra
+            // O comportamento de redirecionamento será tratado pelo navegador
+        });
+    });
+</script>
+
+</body>
+</html>
